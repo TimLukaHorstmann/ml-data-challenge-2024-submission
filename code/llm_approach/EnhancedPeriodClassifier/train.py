@@ -31,11 +31,19 @@ from sklearn.utils.class_weight import compute_class_weight
 sys.path.append('../.')
 from preprocessor import filter_tweet
 
+
+
+##### TO BE MODIFIED #####
+
 # CHOOSE WHICH MODEL TO USE ("normal" version or "modified" version)
-from enhancedperiodclassifier_modified import EnhancedPeriodClassifier, EnhancedPeriodClassifierConfig
+from enhancedperiodclassifier import EnhancedPeriodClassifier, EnhancedPeriodClassifierConfig
+# from enhancedperiodclassifier_modified import EnhancedPeriodClassifier, EnhancedPeriodClassifierConfig
 
 # MEAN OR CLS EMBEDDINGS
-USE_MEAN_EMBEDDING = True # (CLS use is experimental)
+USE_MEAN_EMBEDDING = True # (if False: CLS use is experimental)
+
+# NOTE: Please also make sure to change all relevant parameters at the beginning of the if __name__ == "__main__": block at the end of the script
+
 
 # ############## Function Definitions ############## #
 
@@ -330,10 +338,9 @@ if __name__ == "__main__":
     PREPROCESSING1 = True 
     PREPROCESSING2 = True  
     EXCLUDED_MATCH_IDS = None # Add MatchIDs to exclude from training, if any (did not improve performance)
+    RUN_OPTUNA = False # Set to True to run Optuna hyperparameter optimization
 
     DEVICE = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-
-    RUN_OPTUNA = False
 
     # sia = SentimentIntensityAnalyzer()
 

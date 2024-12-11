@@ -12,6 +12,9 @@ __Team Sigmoid Sigmas:__
   - Mathieu Antonopoulos (Antonopoulos@ip-paris.fr)
   - Baptiste Geisenberger (geisenberger@ip-paris.fr)
 
+
+[Link to the Data Challenge](https://www.kaggle.com/competitions/sub-event-detection-in-twitter-streams)
+
 ## Repository Structure
 - `README.md`: This file.
 - `code`: Directory containing the code developed as part of this data challenge.
