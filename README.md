@@ -1,3 +1,8 @@
+<div align="center">
+    <img alt="Institut Polytechnique de Paris Logo" width="auto" height="100px" src="https://www.ip-paris.fr/sites/default/files/presse/Charte%20Graphique/Logo%20IP%20Paris%206%20%C3%A9coles%20vertical%20png.png" />
+</div>
+
+
 # Machine and Deep Learning Data Challenge: Sub-event Detection in Twitter Streams
 
 __Team Sigmoid Sigmas:__
