@@ -20,10 +20,10 @@ from preprocessor import filter_tweet
 DATA_DIR = '/Data/tlh45/'
 os.environ["HF_HOME"] = DATA_DIR
 TRAINING_DIR = f"{DATA_DIR}/challenge_data/train_tweets"
-MODEL = 'vinai/bertweet-base' or 'bert-base-cased'  "allenai/longformer-base-4096"
+MODEL = 'vinai/bertweet-base' # or 'bert-base-cased'  "allenai/longformer-base-4096"
 MAX_TWEETS = 200
 EPOCHS = 10 # 35 for bertweet-base, 5 for longformer-base-4096
-BATCH_SIZE = 2
+BATCH_SIZE = 1 # adjust based on GPU memory
 
 def load_training_data(directory):
     all_data = []

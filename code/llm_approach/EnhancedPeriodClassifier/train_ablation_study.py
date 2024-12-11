@@ -304,7 +304,7 @@ if __name__ == "__main__":
     CHECKPOINT = None  # e.g., "checkpoint-795"
     WANDB_RUN_ID = None  # e.g., "rmhj5ijn"
 
-    PREPROCESSING1 = False 
+    PREPROCESSING1 = True 
     PREPROCESSING2 = True 
     EXCLUDED_MATCH_IDS = None
 
