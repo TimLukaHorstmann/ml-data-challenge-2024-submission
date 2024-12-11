@@ -1,0 +1,9 @@
+challenge_data/
+sub-event-detection-in-twitter-streams.zip
+.conda/
+wandb/
+results/
+.DS_Store
+code/llm_approach/EnhancedPeriodClassifier/BestModel_EnhancedPeriodClassifier_Modified/
+code/llm_approach/EnhancedPeriodClassifier/BestModel_EnhancedPeriodClassifier/
+code/llm_approach/EnhancedPeriodClassifier/Model
